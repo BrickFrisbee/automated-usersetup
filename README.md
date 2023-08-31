@@ -8,6 +8,8 @@ newuser-setup.ps1 is a script can be used to automatically create new windows us
 
 ## Prior to Execution...
 Be sure the names of your installers, .config files (for jetbrains products), and .config file (for office) match the names of those referenced in the `Software Installation` section. I will include an image of my directory including my newuser-setup.ps1, .exe, .config, and .xml files. Rename either the files in your directory, or the references in the script. 
+
+
 ![alt text](https://github.com/BrickFrisbee/automated-usersetup/blob/main/images/directory.PNG "directory")
 
 **FOR OFFICE 365:** Be sure to use the Office Deployment Tool to install `setup.exe` and the `Configuration.xml` file required for Office 365 installation. 
