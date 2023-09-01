@@ -1,5 +1,13 @@
 # automated-usersetup
-This repository contains a shell script used to automate the setup of a new user's Windows 10 development machine.
+This repository contains a shell script used to automate the setup of a new user's Windows 10 development machine
+
+* [Description](https://github.com/BrickFrisbee/automated-usersetup#description)
+* [Prior to Execution](https://github.com/BrickFrisbee/automated-usersetup#prior-to-execution)
+* [Creating New Users](https://github.com/BrickFrisbee/automated-usersetup#creating-new-users)
+* [Software Installation](https://github.com/BrickFrisbee/automated-usersetup#software-installation)
+* [Cleanup](https://github.com/BrickFrisbee/automated-usersetup#cleanup)
+* [Quality of Life](https://github.com/BrickFrisbee/automated-usersetup#quality-of-life)
+
 
 ## Description
 newuser-setup.ps1 is a script can be used to automatically create new windows users, download software using installers and configuration files, disable unnecessary windows features, add quality of life improvements. To start, the script uses `$username` and `$password` to create a new user. Next, the script uses a foreach loop to iterate over hashtables containing installers with necessary arguments. Following software installation, the script will begin three stages of cleanup: first, the script will disable telemetry, diagnostic data, app-launch tracking, and targeted ads; second, the script will disable bing search and cortana; third, the script will disable tips, tricks, start menu suggestions and sync provider ads. Finally, the script will execute quality of life improvements: hidden files, folders, and drives will be made visible. Additions can be implemented to each section to meet the needs of the user. 
